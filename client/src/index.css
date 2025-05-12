@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;500;600&display=swap');
+
+:root {
+  --background: 218 57% 15%;
+  --foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --border: 47 55% 40% 0.2;
+  --input: 240 3.7% 15.9%;
+  --primary: 47 55% 50%;
+  --primary-foreground: 0 0% 10%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --accent: 47 55% 65%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 47 55% 50% 0.3;
+  --radius: 0.25rem;
+  
+  /* Custom colors */
+  --navy: 218 57% 15%;
+  --gold: 47 55% 50%;
+  --light-gold: 47 80% 80%;
+  --charcoal: 0 0% 20%;
+  --off-white: 0 0% 96%;
+}
+
+.dark {
+  --background: 218 57% 15%;
+  --foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --border: 47 55% 40% 0.2;
+  --input: 240 3.7% 15.9%;
+  --primary: 47 55% 50%;
+  --primary-foreground: 0 0% 10%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --accent: 47 55% 65%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 47 55% 50% 0.3;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-navy text-off-white font-montserrat antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair;
+  }
+}
+
+@layer components {
+  .section-heading {
+    @apply relative font-playfair text-gold font-bold pb-6;
+  }
+  
+  .section-heading::after {
+    content: '';
+    @apply absolute bottom-0 left-1/2 -translate-x-1/2 w-20 h-[3px] bg-gold;
+  }
+  
+  .nav-link {
+    @apply relative text-off-white hover:text-gold transition-colors duration-300;
+  }
+  
+  .nav-link::after {
+    content: '';
+    @apply absolute left-0 bottom-[-4px] w-0 h-[2px] bg-gold transition-all duration-300;
+  }
+  
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+  
+  .gold-button {
+    @apply relative overflow-hidden transition-all duration-300;
+  }
+  
+  .gold-button::before {
+    content: '';
+    @apply absolute top-0 left-[-100%] w-full h-full transition-all duration-700;
+    background: linear-gradient(90deg, transparent, rgba(212,175,55,0.3), transparent);
+  }
+  
+  .gold-button:hover::before {
+    @apply left-[100%];
+  }
+  
+  .gold-divider {
+    @apply h-[3px] w-full my-8;
+    background: linear-gradient(90deg, transparent, theme('colors.gold'), transparent);
+  }
+  
+  .hero-bg {
+    @apply absolute inset-0;
+  }
+  
+  .hero-bg::before {
+    content: '';
+    @apply absolute inset-0 z-10;
+    background: linear-gradient(to bottom, rgba(12,28,61,0.7), rgba(12,28,61,0.9));
+  }
+  
+  .project-card {
+    @apply transition-all duration-300;
+  }
+  
+  .project-card:hover {
+    @apply -translate-y-1 shadow-xl shadow-gold/20;
+  }
+  
+  .form-input {
+    @apply transition-all duration-300;
+  }
+  
+  .form-input:focus {
+    @apply border-gold ring-2 ring-gold/20;
+  }
+  
+  .bg-radial-gradient {
+    background: radial-gradient(circle at center, transparent, theme('colors.navy') 70%);
+  }
+}
