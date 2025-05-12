@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Logo } from "./Logo";
+import { smoothScrollTo } from "@/lib/utils";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,10 +27,17 @@ export function Header() {
     setIsMenuOpen(false);
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    closeMenu();
+  };
+
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 bg-navy ${isScrolled ? 'bg-opacity-90 backdrop-blur-sm' : 'bg-opacity-80'} transition-all duration-300 border-b border-gold/20`}>
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        <Logo />
+        <div onClick={scrollToTop} className="cursor-pointer">
+          <Logo />
+        </div>
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
@@ -85,7 +93,7 @@ export function Header() {
           </a>
           <a 
             href="#contacts" 
-            className="text-off-white hover:text-gold transition-colors py-2"
+            className="text-off-white hover:text-gold transition-colors py-2 border-b border-gold/10"
             onClick={closeMenu}
           >
             Контакты

@@ -6,7 +6,7 @@ const materials = [
     id: 1,
     title: "Кирпичные блоки",
     description: "Высококачественные кирпичные и газобетонные блоки от ведущих производителей.",
-    image: "https://pixabay.com/get/g919ef171f0ba0cc00840d9726b69fd068d0f07edc5298100b89692039a364814dc840bbec1d2b027c99f834fc5d22d53274bb81b439f4c49d7499adfee5dc054_1280.jpg"
+    image: "https://images.unsplash.com/photo-1583775307822-086033364010?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
   },
   {
     id: 2,
@@ -18,37 +18,37 @@ const materials = [
     id: 3,
     title: "Инструменты",
     description: "Профессиональный инструмент для строительных и отделочных работ.",
-    image: "https://pixabay.com/get/gb49b761922195d5b71f4f1db8dc48337d3b8b8883110d1c4622bc5adb3a58220fe42189508899cbbf3de65da600185179f661a5f48139e33691ae23b9e8c21c4_1280.jpg"
+    image: "https://images.unsplash.com/photo-1581147036324-c47a03a86371?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
   },
   {
     id: 4,
     title: "Утеплители",
     description: "Современные материалы для тепло- и звукоизоляции зданий и сооружений.",
-    image: "https://pixabay.com/get/ged17d9812ff8e03bebe69d12001eece01df13bf9903bf50c329daabd71d9ac9e641f9429a5ec609da08972df489287f1b2765f4b6d3a1f2c06795f60f852de61_1280.jpg"
+    image: "https://images.unsplash.com/photo-1616591771809-9a8b57451aee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
   },
   {
     id: 5,
     title: "Кровельные материалы",
     description: "Высококачественные материалы для устройства и ремонта кровли.",
-    image: "https://images.unsplash.com/photo-1622021142947-da7dedc7c39a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
+    image: "https://images.unsplash.com/photo-1635424710928-0544e8512eae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
   },
   {
     id: 6,
     title: "Лаки и краски",
     description: "Широкий ассортимент лакокрасочных материалов премиального качества.",
-    image: "https://pixabay.com/get/gdb025fbc17443db6421ee9d4d74995fbb556073c3ee337d61143aa1e32488ef3473dbabe588360f22b9cf963bda96a5380a9de9f491e57cc098e5f605ab9d5ad_1280.jpg"
+    image: "https://images.unsplash.com/photo-1562259929-b4e1fd230771?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
   },
   {
     id: 7,
     title: "Арматура",
     description: "Арматура и металлопрокат для бетонных и строительных работ.",
-    image: "https://pixabay.com/get/gb960a6a47c28bd8528841f4761be60ae99ef766cc5c5a6934297c214f9265eba395283176af82891cb7c58696f9330da87d036d8e858765f5422befc6fa87402_1280.jpg"
+    image: "https://images.unsplash.com/photo-1626668893558-1493e8f45f9f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
   },
   {
     id: 8,
     title: "Спецодежда",
     description: "Качественная спецодежда и средства индивидуальной защиты.",
-    image: "https://pixabay.com/get/g82b1a8259d011d04c8dfc8f960783ec0b9952dab3d5f2fc4fbb75bcaa09e5ff38a435680d24fdb12d9c1ac3676f35d94fc57d8f6bb043072873624650b93eacf_1280.jpg"
+    image: "https://images.unsplash.com/photo-1521223344201-d169129f7b7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
   }
 ];
 

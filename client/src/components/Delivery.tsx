@@ -23,7 +23,7 @@ const itemVariants = {
 export function Delivery() {
   return (
     <section id="delivery" className="py-20 bg-charcoal relative">
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1506932248762-69d978912b80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&h=1080')] bg-fixed bg-cover opacity-10"></div>
+      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&h=1080')] bg-fixed bg-cover opacity-10"></div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
