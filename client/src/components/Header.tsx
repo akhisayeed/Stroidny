@@ -61,7 +61,7 @@ export function Header() {
       </div>
       
       {/* Mobile Navigation */}
-      <div className={`md:hidden bg-navy border-t border-gold/20 transition-all duration-300 ${isMenuOpen ? 'max-h-60' : 'max-h-0 overflow-hidden'}`}>
+      <div className={`md:hidden bg-navy border-t border-gold/20 transition-all duration-300 ${isMenuOpen ? 'max-h-80' : 'max-h-0 overflow-hidden'}`}>
         <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
           <a 
             href="#main" 
